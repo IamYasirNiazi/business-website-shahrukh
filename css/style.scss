@@ -39,6 +39,11 @@ code {
         monospace;
 }
 
+ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
 section {
     padding: 4.5rem .5rem;
 }
@@ -83,7 +88,7 @@ a{
     // align-items: center;
 
     nav{
-        width: 85%;
+        width: 80%;
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
@@ -123,9 +128,10 @@ a{
  
     
     .hero{
+        margin-top: 2rem;
 
         .container{
-            width: 85%;
+            width: 80%;
             
             .row{
                 display: flex;
@@ -236,29 +242,137 @@ a{
 
     
     .point-1{
+        margin-top: 2rem;
+        padding: 7rem 0;
+        padding-bottom: 4rem;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .shape1{
+            width: 100%;
+            height: 100%;
+            background: #f6f9fc;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: skewY(-3deg);
+            z-index: 5;
+        }
+
+        .shape2{
+            width: 100%;
+            height: 80%;
+            background: #f6f9fc;
+            position: absolute;
+            bottom: -3rem;
+            left: 0;
+            z-index: 6;
+        }
+
 
         .container{
-            width: 85%;
+            width: 80%;
+            position: relative;
+            z-index: 10;
 
             .row{
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
-
+                
                 .col1{
+                    position: relative;
 
+                    .wrapper{
 
+                        .digit{
+                            position: absolute;
+                            font-size: 5rem;
+                            font-weight: 600;
+                            opacity: .05;
+                            top: 0;
+                        }
+
+                        div{
+                            margin-top: 3.8rem;
+                            margin-left: 3rem;
+                            h3{
+
+                            }
+     
+                            p{
+    
+                            }
+                        }
+                    }
+                    
                 }
-
+                
+                
                 .col2{
+                    margin-top: 3rem;
+                    // border: 1px solid red;
+                    height: 25rem;
 
-                    div{
+                    .wrapper{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
 
-                        img{
-                            width: 85%;
+                        .content{
+                            width: 14rem;
+                            height:10rem;
+                            // border: 1px solid red;
+
+                            div{
+                                width: 14rem;
+                                height:10rem;
+                                background-color: #3F3D56;
+
+                                img{
+
+                                }
+                            }
+
+                            p{
+                                margin-top: 1rem;
+                                font-size: .65rem;
+                            }
+                        }
+
+                        .content-1{
+                            position: absolute;
+                            z-index: 5;
+                            top: 0;
+                            left: 0;
+
+                        }
+
+                        .content-2{
+                            position: absolute;
+                            z-index: 5;
+                            top: 0;
+                            right: 0;
+
+                        }
+
+                        .content-3{
+                            position: absolute;
+                            z-index: 5;
+                            bottom: 0;
+                            right: 0;
+                            // border: 1px solid green;
+                            
                         }
                     }
 
+
+                    // div{
+                    //     img{
+                    //         width: 85%;
+                    //     }
+                    // }
                 }
             }
         }
@@ -267,9 +381,10 @@ a{
 
 
     .point-2{
+        margin-top: 5rem;
 
         .container{
-            width: 85%;
+            width: 80%;
 
             .row{
                 display: flex;
@@ -289,6 +404,30 @@ a{
                 }
 
                 .col2{
+                    position: relative;
+
+                    .wrapper{
+
+                        .digit{
+                            position: absolute;
+                            font-size: 5rem;
+                            font-weight: 600;
+                            opacity: .05;
+                            top: 0;
+                        }
+
+                        .content{
+                            margin-top: 3.8rem;
+                            margin-left: 3rem;
+                            h3{
+
+                            }
+     
+                            p{
+    
+                            }
+                        }
+                    }
 
                 }
             }
@@ -298,9 +437,38 @@ a{
 
 
     .category{
+        // margin-top: 2rem;
+        padding: 10rem 0;
+        // padding-bottom: 4rem;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .shape1{
+            width: 100%;
+            height: 100%;
+            background: #f6f9fc;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: skewY(-3deg);
+            z-index: 5;
+        }
+
+        // .shape2{
+        //     width: 100%;
+        //     height: 80%;
+        //     background: #f6f9fc;
+        //     position: absolute;
+        //     bottom: -3rem;
+        //     left: 0;
+        //     z-index: 6;
+        // }
 
         .container{
-            width: 85%;
+            width: 80%;
+            position: relative;
+            z-index: 10;
 
             .row{
                 display: flex;
@@ -341,9 +509,38 @@ a{
 
 
     .email-banner{
+        margin-top: 2rem;
+        // margin-top: 4rem;
+        // padding: 10rem 0;
+        // width: 100%;
+        // height: 100%;
+        // position: relative;
+
+        // .shape1{
+        //     width: 100%;
+        //     height: 100%;
+        //     background: #f6f9fc;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     transform: skewY(-3deg);
+        //     z-index: 5;
+        // }
+
+        // .shape2{
+        //     width: 100%;
+        //     height: 80%;
+        //     background: #f6f9fc;
+        //     position: absolute;
+        //     bottom: -3rem;
+        //     left: 0;
+        //     z-index: 6;
+        // }
 
         .container{
-            width: 85%;
+            width: 80%;
+            position: relative;
+            z-index: 10;
 
             .row{
                 display: flex;
@@ -390,6 +587,87 @@ a{
                     }
 
                     
+                }
+            }
+        }
+    }
+
+
+
+    .footer{
+        .container{
+            width: 80%;
+            padding: 3rem 1rem;
+
+            .row{
+
+                .col{
+
+                    .wrapper{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        .list-items{
+                            list-style-type: none;
+                            list-style-position: inside;
+                            line-height: 1.8;
+
+                            li{
+                                margin: 0;
+                                font-size: .95rem;
+                            }
+                        }
+
+
+                        .about{
+                            flex: 2;
+                            margin-top: auto;
+                            margin-bottom: auto;
+
+                            h6{
+                                font-size: .95rem;
+                            }
+
+                            div{
+                                display: flex;
+                                justify-content: flex-start;
+                                gap: 1.8rem;
+
+                                i{
+                                    font-size: 2rem;
+
+                                }
+                            }
+
+                            h6{
+                                margin-top: .5rem;
+
+                                i{
+                                    font-size: 1.2rem;
+
+                                }
+
+                                span{
+                                    margin-left: .3rem;
+                                    font-size: 1rem;         
+                                }
+                            }
+
+                        }
+
+                        .products{
+                            flex: 1;
+                        }
+
+                        .company{
+                            flex: 1;
+                        }
+
+                        .legal{
+                            flex: 1;
+                        }
+                    }
                 }
             }
         }
