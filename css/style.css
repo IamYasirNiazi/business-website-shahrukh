@@ -69,6 +69,18 @@ a {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    gap: 2rem;
+  }
 }
 .main-wrapper nav a {
   display: flex;
@@ -95,8 +107,19 @@ a {
 .main-wrapper .hero {
   margin-top: 2rem;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero {
+    margin-top: -1.5rem;
+  }
+}
 .main-wrapper .hero .container {
   width: 80%;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero .container {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
 }
 .main-wrapper .hero .container .row {
   display: flex;
@@ -105,7 +128,8 @@ a {
 @media (max-width: 768px) {
   .main-wrapper .hero .container .row {
     flex-direction: column;
-    gap: 3rem;
+    align-items: center;
+    gap: 4rem;
   }
 }
 .main-wrapper .hero .container .row .left {
@@ -117,15 +141,36 @@ a {
   font-weight: 600;
   line-height: 1.3;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero .container .row .left .title h1 {
+    font-size: 1.6rem;
+  }
+}
 .main-wrapper .hero .container .row .left .subtext p {
   font-size: 1.2rem;
   line-height: 1.6;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero .container .row .left .subtext p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero .container .row .left .email {
+    display: flex;
+    justify-content: center;
+  }
 }
 .main-wrapper .hero .container .row .left .email .input-wrapper {
   border-radius: 0.2rem;
   padding: 0.4rem 0.8rem;
   background-color: #fff;
-  border: 1px solid rgba(34, 34, 34, 0.4862745098);
+  border: 1px solid rgba(34, 34, 34, 0.4196078431);
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero .container .row .left .email .input-wrapper {
+    padding: 0.3rem 0.7rem;
+  }
 }
 .main-wrapper .hero .container .row .left .email .input-wrapper input {
   background: none;
@@ -133,11 +178,27 @@ a {
   border: none;
   font-size: 0.9rem;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero .container .row .left .email .input-wrapper input {
+    font-size: 0.8rem;
+  }
+}
 .main-wrapper .hero .container .row .left .email .input-wrapper input::placeholder {
   font-size: 0.9rem;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero .container .row .left .email .input-wrapper input::placeholder {
+    font-size: 0.8rem;
+  }
+}
 .main-wrapper .hero .container .row .left .email button {
   font-weight: 500;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .hero .container .row .left .email button {
+    padding: 0.6rem 1rem;
+    font-size: 0.7rem;
+  }
 }
 .main-wrapper .hero .container .row .right .wrapper {
   width: 100%;
@@ -146,9 +207,10 @@ a {
   justify-content: flex-start;
   transform: scale(1.15);
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
   .main-wrapper .hero .container .row .right .wrapper {
-    transform: scale(1) !important;
+    justify-content: center;
+    transform: scale(1.05) !important;
   }
 }
 .main-wrapper .hero .container .row .right .wrapper svg {
@@ -174,49 +236,52 @@ a {
   width: 100%;
 }
 .main-wrapper .point-1 {
-  margin-top: 7rem;
-  padding: 2rem 0;
-  padding-bottom: 6rem;
+  margin-top: 3rem;
+  padding: 5rem 0;
+  padding-bottom: 13rem;
   width: 100%;
   height: 100%;
   position: relative;
-}
-.main-wrapper .point-1 .shape1 {
-  width: 100%;
-  height: 100%;
-  background: #f6f9fc;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: skewY(4deg);
-  z-index: 5;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 {
+    margin-top: 5;
+    padding: 1rem 0;
+  }
 }
 .main-wrapper .point-1 .shape2 {
   width: 100%;
-  height: 80%;
-  background: #f6f9fc;
+  height: 15%;
   position: absolute;
-  top: -4rem;
+  bottom: -3rem;
   left: 0;
   z-index: 6;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
+  transform: skewY(3deg);
+  background-color: #fff;
 }
 .main-wrapper .point-1 .container {
   width: 80%;
   position: relative;
   z-index: 10;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+}
 .main-wrapper .point-1 .container .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container .row {
+    flex-direction: column;
+  }
 }
 .main-wrapper .point-1 .container .row .col1 {
   position: relative;
@@ -247,19 +312,44 @@ a {
   margin-top: 3rem;
   height: 28rem;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container .row .col2 {
+    height: 35rem;
+  }
+}
 .main-wrapper .point-1 .container .row .col2 .wrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container .row .col2 .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
 .main-wrapper .point-1 .container .row .col2 .wrapper .content {
   width: 14rem;
   height: 10rem;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container .row .col2 .wrapper .content {
+    width: 30%;
+    height: auto;
+  }
 }
 .main-wrapper .point-1 .container .row .col2 .wrapper .content div {
   width: 14rem;
   height: 10rem;
   background-color: #3F3D56;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container .row .col2 .wrapper .content div {
+    width: 100%;
+    height: 5rem;
+  }
 }
 .main-wrapper .point-1 .container .row .col2 .wrapper .content p {
   margin-top: 1rem;
@@ -271,11 +361,21 @@ a {
   top: 0;
   left: 0;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container .row .col2 .wrapper .content-1 {
+    position: relative;
+  }
+}
 .main-wrapper .point-1 .container .row .col2 .wrapper .content-2 {
   position: absolute;
   z-index: 5;
   top: 0;
   right: 0;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container .row .col2 .wrapper .content-2 {
+    position: relative;
+  }
 }
 .main-wrapper .point-1 .container .row .col2 .wrapper .content-3 {
   position: absolute;
@@ -283,8 +383,13 @@ a {
   bottom: 0;
   right: 0;
 }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-1 .container .row .col2 .wrapper .content-3 {
+    position: relative;
+  }
+}
 .main-wrapper .point-2 {
-  margin-top: 4rem;
+  margin-top: 0rem;
   margin-bottom: 2rem;
 }
 .main-wrapper .point-2 .container {
@@ -294,6 +399,12 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .main-wrapper .point-2 .container .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .main-wrapper .point-2 .container .row .col1 div img {
   width: 85%;
