@@ -19,3 +19,24 @@
 
 //     observer.observe(elements);
 //   } 
+
+
+
+
+
+const navbar = document.getElementById('navbar');
+let prevScrollpos = window.pageYOffset || document.documentElement.scrollTop;
+
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (prevScrollpos > currentScrollPos) {
+    // Scrolling upwards
+    navbar.classList.add('sticky');
+  } else {
+    // Scrolling downwards
+    navbar.classList.remove('sticky');
+  }
+
+  prevScrollpos = currentScrollPos;
+};

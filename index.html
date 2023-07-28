@@ -28,25 +28,27 @@
   <body>
     <div class="main-wrapper">
 
-      <nav class="position-relative">
-        <a href="/index.html" class="animate__animated animate__bounceIn">
-          <i class="ri-box-3-fill"></i>
-          <span class="logo">Meet MAX</span>
-        </a>
-        <ul
-          class="list-unstyled animate__animated animate__bounceIn" id="navigation"
-        >
-          <li>
-            <a href="#">Features</a>
-          </li>
-          <li>
-            <a href="#">Pricing</a>
-          </li>
-          <li>
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
-        <i class="ri-menu-line animate__animated animate__bounceIn" id="hamburger" onclick="toggleMenu()"></i>
+      <nav class="position-relative" id="navbar">
+        <div class="wrapper">
+          <a href="/index.html" class="animate__animated animate__bounceIn">
+            <i class="ri-box-3-fill"></i>
+            <span class="logo">Meet MAX</span>
+          </a>
+          <ul
+            class="list-unstyled animate__animated animate__bounceIn" id="navigation"
+          >
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+          <i class="ri-menu-line animate__animated animate__bounceIn" id="hamburger" onclick="toggleMenu()"></i>
+        </div>
       </nav>
 
       <section class="hero d-flex align-items-center justify-content-between">
@@ -498,7 +500,7 @@
 
 
     
-    <script src="/javascript.js"></script>
+    <script src="/javascript.js" defer></script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
