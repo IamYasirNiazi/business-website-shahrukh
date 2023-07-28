@@ -27,13 +27,14 @@
   </head>
   <body>
     <div class="main-wrapper">
-      <nav>
+
+      <nav class="position-relative">
         <a href="/index.html" class="animate__animated animate__bounceIn">
           <i class="ri-box-3-fill"></i>
           <span class="logo">Meet MAX</span>
         </a>
         <ul
-          class="d-flex align-items-center gap-5 list-unstyled animate__animated animate__bounceIn"
+          class="list-unstyled animate__animated animate__bounceIn" id="navigation"
         >
           <li>
             <a href="#">Features</a>
@@ -45,6 +46,7 @@
             <a href="#">FAQ</a>
           </li>
         </ul>
+        <i class="ri-menu-line animate__animated animate__bounceIn" id="hamburger" onclick="toggleMenu()"></i>
       </nav>
 
       <section class="hero d-flex align-items-center justify-content-between">
@@ -454,47 +456,86 @@
                     </h6>
                   </a>
                 </div>
-                <div class="products" data-aos="zoom-in">
-                  <h6>Products</h6>
-                  <ul class="list-items">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Tour</a></li>
-                  </ul>
-                </div>
-                <div class="company" data-aos="zoom-in">
-                  <h6>Company</h6>
-                  <ul class="list-items">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Blog</a></li>
-                  </ul>
-                </div>
-                <div class="legal" data-aos="zoom-in">
-                  <h6>Legal</h6>
-                  <ul class="list-items">
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">GDPR Policy</a></li>
-                  </ul>
+                <div class="links">
+                  <div class="products" data-aos="zoom-in">
+                    <h6>Products</h6>
+                    <ul class="list-items">
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Tour</a></li>
+                    </ul>
+                  </div>
+                  <div class="company" data-aos="zoom-in">
+                    <h6>Company</h6>
+                    <ul class="list-items">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Blog</a></li>
+                    </ul>
+                  </div>
+                  <div class="legal" data-aos="zoom-in">
+                    <h6>Legal</h6>
+                    <ul class="list-items">
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">GDPR Policy</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </footer>
+
+
     </div>
 
+
+
+
+
+
+
+    
     <script src="/javascript.js"></script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
       AOS.init();
     </script>
+    
+    <script>
+      function toggleMenu(){
+        // const hamburger = document.getElementById('hamburger')
+        const nav = document.getElementById('navigation')
+        nav.classList.toggle('toggle-nav')
+      }
+
+      
+      document.addEventListener('click', function(event){
+        const hamburger = document.getElementById('hamburger')
+
+        if(!hamburger.contains(event.target)){
+          const nav = document.getElementById('navigation')
+          nav.classList.remove('toggle-nav')
+        }
+      })
+
+      const nav = document.getElementById('navigation')
+
+      nav.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+    </script>
+    
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+  
   </body>
 </html>
