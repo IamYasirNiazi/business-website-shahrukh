@@ -540,9 +540,11 @@ a {
         height: 100%;
         position: relative;
 
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
+        background: radial-gradient(#a960ee 40%, rgba(144,224,255,0) 60%) -420px -180px no-repeat,radial-gradient(#ffcb57 23%, rgba(255,203,87,0) 70%) 240px -24px no-repeat,radial-gradient(#90e0ff 30%, rgba(144,224,255,0) 70%) -270px 220px no-repeat, #a960ee;
+
+        // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        // background-size: 400% 400%;
+        // animation: gradient 15s ease infinite;
 
         @media screen and (max-width:575px) {
             // margin-top: 5;
