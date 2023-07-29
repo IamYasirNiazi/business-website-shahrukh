@@ -24,19 +24,34 @@
 
 
 
+// const navbar = document.getElementById('navbar');
+// let prevScrollpos = window.pageYOffset || document.documentElement.scrollTop;
+
+// window.onscroll = function() {
+//   const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+//   if (prevScrollpos > currentScrollPos) {
+//     // Scrolling upwards
+//     navbar.classList.add('sticky');
+//   } else {
+//     // Scrolling downwards
+//     navbar.classList.remove('sticky');
+//   }
+
+//   prevScrollpos = currentScrollPos;
+// };
+
+
+
+
 const navbar = document.getElementById('navbar');
-let prevScrollpos = window.pageYOffset || document.documentElement.scrollTop;
-
-window.onscroll = function() {
-  const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (prevScrollpos > currentScrollPos) {
-    // Scrolling upwards
-    navbar.classList.add('sticky');
-  } else {
-    // Scrolling downwards
-    navbar.classList.remove('sticky');
-  }
-
-  prevScrollpos = currentScrollPos;
-};
+// function stickyNavbar(){
+    window.addEventListener('scroll', ()=>{
+  
+      if(document.body.scrollTop>40 || document.documentElement.scrollTop>40){
+        navbar.classList.add("sticky");
+      }else{
+        navbar.classList.remove("sticky");
+      }
+    })
+// }

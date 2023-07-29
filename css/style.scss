@@ -118,6 +118,20 @@ a {
     animation: fadeIn 0.3s;
     background-color: #fff;
     box-shadow: 0px 1px 10px 5px #22222209;
+
+    .email{
+        @media screen and (min-width:768px){
+            display: flex !important;
+            align-items: center;
+            gap: .7rem;
+        }
+    }
+
+    ul{
+        @media screen and (min-width:768px){
+            display: none !important;
+        }
+    }
 }
 
 @keyframes fadeIn {
@@ -245,6 +259,76 @@ a {
                         }
                     }
 
+                }
+            }
+
+            .email {
+                display: none;
+                
+
+                // @media screen and (min-width:768px) {
+                //     display: flex;
+                //     justify-content: center;
+                // }
+
+                // @media (max-width:360px) {
+                //     display: flex;
+                //     flex-direction: column;
+                //     align-items: center;
+                // }
+
+                .input-wrapper {
+                    border-radius: .2rem;
+                    padding: .4rem .8rem;
+                    background-color: #fff;
+                    border: 1px solid #2222226b;
+
+                    @media screen and (max-width:767px) {
+                        padding: .3rem .7rem;
+                    }
+
+                    // @media (max-width:360px) {
+                    //     width: 60%;
+                    // }
+
+                    input {
+                        background: none;
+                        outline: none;
+                        border: none;
+                        font-size: .9rem;
+
+                        // @media (max-width:360px) {
+                        //     font-size: .7rem;
+                        // }
+
+                        @media (min-width:361px) and (max-width:767px) {
+                            font-size: .8rem;
+                        }
+
+                        &::placeholder {
+                            font-size: .9rem;
+
+                            @media screen and (max-width:767px) {
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    font-weight: 500;
+
+                    @media screen and (max-width:767px) {
+                        padding: .6rem 1rem;
+                        font-size: .7rem;
+
+                    }
+
+                    @media (max-width:360px) {
+                        padding: .6rem .5rem;
+                        font-size: .7rem;
+
+                    }
                 }
             }
 
