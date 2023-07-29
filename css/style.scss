@@ -1130,6 +1130,7 @@ a {
                         @media (max-width:767px) {
                             // flex-direction: column;
                             // align-items: flex-start;
+                            flex-direction: column;
                             justify-content: center;
                             gap: 2rem;
                             flex-wrap: wrap;
@@ -1220,7 +1221,7 @@ a {
                             }
 
                             @media (max-width:430px) {
-                                justify-content: center;
+                                justify-content: flex-start;
                                 flex-wrap: wrap;
                                 gap: 2rem;
                             }
@@ -1236,6 +1237,10 @@ a {
 
                             .products {
                                 // flex: 1;
+
+                                @media (max-width:430px) {
+                                    width: 45%;
+                                }
 
                                 @media (max-width:767px) {}
                             }
