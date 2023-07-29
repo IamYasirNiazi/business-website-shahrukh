@@ -330,9 +330,16 @@ a {
                     }
 
                     .email {
+
                         @media screen and (max-width:991px) {
                             display: flex;
                             justify-content: center;
+                        }
+
+                        @media (max-width:360px) {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
                         }
 
                         .input-wrapper {
@@ -345,9 +352,9 @@ a {
                                 padding: .3rem .7rem;
                             }
 
-                            @media (max-width:360px) {
-                                width: 65%;
-                            }
+                            // @media (max-width:360px) {
+                            //     width: 60%;
+                            // }
 
                             input {
                                 background: none;
@@ -355,7 +362,11 @@ a {
                                 border: none;
                                 font-size: .9rem;
 
-                                @media screen and (max-width:767px) {
+                                // @media (max-width:360px) {
+                                //     font-size: .7rem;
+                                // }
+
+                                @media (min-width:361px) and (max-width:767px) {
                                     font-size: .8rem;
                                 }
 
@@ -1035,7 +1046,7 @@ a {
                         @media (max-width:767px) {
                             // flex-direction: column;
                             // align-items: flex-start;
-                            justify-content: space-between;
+                            justify-content: center;
                             gap: 2rem;
                             flex-wrap: wrap;
                         }
@@ -1112,19 +1123,25 @@ a {
                             justify-content: space-between;
                             gap: 7rem;
 
-                            @media (max-width:767px) {
+                            @media (min-width:576px) and (max-width:767px) {
                                 justify-content: flex-start;
                                 flex-wrap: wrap;
                                 gap: 4rem;
                             }
 
-                            @media (max-width:575px) {
+                            @media (min-width:431px) and (max-width:575px) {
                                 justify-content: flex-start;
                                 flex-wrap: wrap;
                                 gap: 2rem;
                             }
 
-                            @media (max-width:991px) {
+                            @media (max-width:430px) {
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                gap: 2rem;
+                            }
+
+                            @media (min-width:768px) and (max-width:991px) {
                                 justify-content: flex-start;
                                 // flex-direction: column;
                                 // align-items: flex-start;
@@ -1147,6 +1164,11 @@ a {
 
                             .legal {
                                 // flex: 1;
+
+                                @media (max-width:430px) {
+                                    align-self: flex-start;
+                                    flex-basis: calc(100% - 40%);
+                                }
                             }
                         }
 

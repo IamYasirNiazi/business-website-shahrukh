@@ -261,6 +261,13 @@ a {
     justify-content: center;
   }
 }
+@media (max-width: 360px) {
+  .main-wrapper .hero .container .row .left .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .main-wrapper .hero .container .row .left .email .input-wrapper {
   border-radius: 0.2rem;
   padding: 0.4rem 0.8rem;
@@ -272,18 +279,13 @@ a {
     padding: 0.3rem 0.7rem;
   }
 }
-@media (max-width: 360px) {
-  .main-wrapper .hero .container .row .left .email .input-wrapper {
-    width: 65%;
-  }
-}
 .main-wrapper .hero .container .row .left .email .input-wrapper input {
   background: none;
   outline: none;
   border: none;
   font-size: 0.9rem;
 }
-@media screen and (max-width: 767px) {
+@media (min-width: 361px) and (max-width: 767px) {
   .main-wrapper .hero .container .row .left .email .input-wrapper input {
     font-size: 0.8rem;
   }
@@ -841,7 +843,7 @@ a {
 }
 @media (max-width: 767px) {
   .main-wrapper .footer .container .row .col .wrapper {
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
   }
@@ -903,23 +905,36 @@ a {
   justify-content: space-between;
   gap: 7rem;
 }
-@media (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .main-wrapper .footer .container .row .col .wrapper .links {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 4rem;
   }
 }
-@media (max-width: 575px) {
+@media (min-width: 431px) and (max-width: 575px) {
   .main-wrapper .footer .container .row .col .wrapper .links {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 2rem;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 430px) {
+  .main-wrapper .footer .container .row .col .wrapper .links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   .main-wrapper .footer .container .row .col .wrapper .links {
     justify-content: flex-start;
     gap: 3rem;
+  }
+}
+@media (max-width: 430px) {
+  .main-wrapper .footer .container .row .col .wrapper .links .legal {
+    align-self: flex-start;
+    flex-basis: 60%;
   }
 }
